@@ -22,5 +22,5 @@ limitations under the License.
 
 Usage
 =====
-from pyhinavrophonetic import hinavro
-      hinavro.parse("kaise ho")
+from phonetic2bengali import phonetic2bengalifunc
+      phonetic2bengali.conv("Folder zip korbo kichukhon por")

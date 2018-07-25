@@ -2,8 +2,6 @@
 
 try:
     from setuptools import setup
-    from phonetic2bengali import __version__
-    print __version__
 
     setup(name='phonetic2bengali',
           version='1.0.0',
@@ -12,8 +10,8 @@ try:
           author='Subrata Sarkar',
           author_email='subrotosarkar32@gmail.com',
           url='https://github.org/SubrataSarkar32/phonetic2bengali/',
-          packages=['phonetic2bengali','phonetic2bengali.avro'],
-          package_data = {'phonetic2bengali': ['*.rst', '/avro/resources/*.json','/avro/utils/resources/*.json']},
+          packages=['phonetic2bengali','phonetic2bengali.pyavrophonetic','phonetic2bengali.pyavrophonetic.utils'],
+          package_data = {'': ['*.txt', '*.json','*.rst']},
           include_package_data = True,
           install_requires=["simplejson >= 3.0.0","pyenchant >= 2.0.0"],
           license='Apache v2.0',
@@ -28,4 +26,4 @@ try:
           )
 
 except ImportError:
-    print 'Install setuptools'
+    print('Install setuptools')

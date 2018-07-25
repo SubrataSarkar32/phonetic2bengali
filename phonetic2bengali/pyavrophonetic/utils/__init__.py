@@ -31,4 +31,6 @@ def utf(text):
         output = text
     except TypeError:
         output = text
+    except NameError:
+        output = text
     return output

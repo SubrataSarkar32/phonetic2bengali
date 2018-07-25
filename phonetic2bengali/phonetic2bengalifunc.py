@@ -13,6 +13,7 @@ def conv(stre="",delim="!?.",n=0):
     english=0
     bengali=0
     startendsign=""
+    global globstr
     try:
         while stre[n]!="." and stre[n]!="?" and stre[n]!="!":
             # Iterating from the back of the sentence
@@ -96,3 +97,4 @@ def callfileconvert():
         else:
             pass
     
+conv("Folder zip korte hobe abar . ami korbo.")
